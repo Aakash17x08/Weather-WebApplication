@@ -5,6 +5,10 @@
 
 This Weather App allows users to search for weather information for any city. It provides real-time data such as temperature, humidity, and weather conditions. The app uses the OpenWeather API to fetch weather data and displays it in a user-friendly interface. The design features a glass effect with responsive layouts and animations for smooth interactions.
 
+## Live Demo
+
+You can view the live demo of the Weather App at [Weatheride](https://weatheride.netlify.app/).
+
 ---
 
 ## Features
@@ -89,9 +93,7 @@ This Weather App allows users to search for weather information for any city. It
 
 ---
 
-## Live Demo
 
-You can view the live demo of the Weather App at [Weatheride](https://weatheride.netlify.app/).
 
 ## Usage
 
