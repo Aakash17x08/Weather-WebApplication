@@ -1,24 +1,4 @@
-/* Glass Effect for SearchBox */
-.SearchBox {
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-    backdrop-filter: blur(10px); /* Apply blur effect */
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px;
-    width: 90%; /* Ensures it's responsive */
-    max-width: 400px; /* Max width for large screens */
-    margin: 20px auto; /* Centered in the middle */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    animation: fadeIn 1s ease-out; /* Animation for fade-in effect */
-    overflow: hidden; /* Prevents scrolling */
-  }
-  
-  /* Add padding and spacing */
-  .SearchBox h3 {
-    font-size: 1.5rem;
-    color: white;
-    margin-bottom: 15px;
-    text-align: center;
-  }
+
   
   /* Responsive behavior for smaller screens */
   @media (max-width: 600px) {

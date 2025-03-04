@@ -39,15 +39,15 @@ const SearchBox = ({ updateInfo }) => {
   };
 
   let handleSubmit = async (event) => {
-   try {
-    event.preventDefault();
-    console.log(city);
-    setCity("");
-    let newinfo = await getWeatherInfo();
-    updateInfo(newinfo);
-   } catch (error) {
-    setError(true);
-   }
+    try {
+      event.preventDefault();
+      console.log(city);
+      setCity("");
+      let newinfo = await getWeatherInfo();
+      updateInfo(newinfo);
+    } catch (error) {
+      setError(true);
+    }
   };
 
   return (
@@ -61,27 +61,29 @@ const SearchBox = ({ updateInfo }) => {
           required
           value={city}
           onChange={handleChange}
+          style={{color:"black", border:"2px solid ", borderRadius:"10px"}}
         />
         <br></br>
         <br></br>
         <Button
-  variant="contained"
-  type="submit"
-  sx={{
-    backgroundColor: "rgba(255, 255, 255, 0.2)", 
-    color: "#fff",
-    borderRadius: "10px", 
-    padding: "10px 20px", 
-    boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)",
-    '&:hover': {
-      backgroundColor: "rgba(255, 255, 255, 0.4)", 
-    }
-  }}
->
-  Search
-</Button>
+          variant="contained"
+          type="submit"
+          style={{color:"black", border:"2px solid ", borderRadius:"10px"}}
+          sx={{
+            backgroundColor: "rgba(255, 255, 255, 0.2)",
+            color: "#fff",
+            borderRadius: "10px",
+            padding: "10px 20px",
+            boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)",
+            "&:hover": {
+              backgroundColor: "rgba(255, 255, 255, 0.4)",
+            },
+          }}
+        >
+          Search
+        </Button>
 
-        {error && <p style={{color:"red"}}>City not found!</p>}
+        {error && <p style={{ color: "red" }}>City not found!</p>}
       </form>
     </div>
   );

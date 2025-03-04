@@ -1,23 +1,14 @@
 /* Glass Effect for InfoBox */
-.InfoBox {
-  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-  backdrop-filter: blur(15px); /* Apply blur effect */
-  border-radius: 15px; /* Rounded corners */
-  padding: 20px;
-  width: 95%; /* InfoBox takes 95% of the available screen width */
-  max-width: 600px; /* Decreased max-width for smaller content width */
-  margin: 20px auto; /* Center the InfoBox */
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15); /* Soft shadow */
-  animation: fadeIn 1s ease-out; /* Animation for smooth fade-in */
-  overflow: hidden; /* Prevents scrolling */
-}
+
 
 /* For InfoBox header */
-.InfoBox h1 {
-  color: white;
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-  text-align: center;
+.InfoBox__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+  border-radius: 10px;
 }
 
 /* For the card container inside InfoBox */
